@@ -62,7 +62,6 @@ Full working examples can be found in [examples](./examples) folder.
 | ------------------------------------------------------------------------ | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 0.13 |
 | <a name="requirement_gitlab"></a> [gitlab](#requirement_gitlab)          | >=3.5.0 |
-| <a name="requirement_local"></a> [local](#requirement_local)             | >=1.3.0 |
 
 ## Providers
 
@@ -76,22 +75,22 @@ No modules.
 
 ## Resources
 
-| Name                                                                                                     | Type     |
-| -------------------------------------------------------------------------------------------------------- | -------- |
-| [gitlab_group.this](https://registry.terraform.io/providers/gitlabhq/gitlab/latest/docs/resources/group) | resource |
+| Name | Type |
+| --- | --- |
+| [gitlab_group.this](https://registry.terraform.io/providers/gitlabhq/gitlab/latest/docs/data-sources/group) | data source |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-| --- | --- | --- | --- | :-: |
-| <a name="input_description"></a> [description](#input_description) | description of group. | `string` | `""` | no |
-| <a name="input_name"></a> [name](#input_name) | The name of the group. | `string` | n/a | yes |
+| Name                                          | Description                 | Type     | Default | Required |
+| --------------------------------------------- | --------------------------- | -------- | ------- | :------: |
+| <a name="input_path"></a> [path](#input_path) | The full path of the group. | `string` | n/a     |   yes    |
 
 ## Outputs
 
 | Name                                                        | Description           |
 | ----------------------------------------------------------- | --------------------- |
 | <a name="output_instance"></a> [instance](#output_instance) | output instance group |
+| <a name="output_path"></a> [path](#output_path)             | output path group     |
 
 <!-- END_TF_DOCS -->
 
