@@ -1,4 +1,4 @@
-<!-- Space: TerraformModuleTemplate -->
+<!-- Space: TerraformGitlabGroup -->
 <!-- Parent: Project -->
 <!-- Title: Commands -->
 
