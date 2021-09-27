@@ -37,6 +37,7 @@ This is a list of plugins that need to be installed previously to enjoy all the 
     source  = "hadenlabs/group/gitlab"
     version = "0.0.0"
   }
+
 ```
 
 Full working examples can be found in [examples](./examples) folder.
@@ -46,18 +47,10 @@ Full working examples can be found in [examples](./examples) folder.
 ### common
 
 ```hcl
-  module "main" {
-    source  = "app.terraform.io/hadenlabs/terraform-gitlab-group/aws"
-    version = "0.1.1"
 
-    providers = {
-      aws = aws
-      template = template
-      local = local
-    }
-    name        = var.name
-    public_key  = var.public_key
-    private_key = var.private_key
+  module "main" {
+    source  = "hadenlabs/group/gitlab"
+    version = "0.0.0"
   }
 ```
 
@@ -68,10 +61,14 @@ Full working examples can be found in [examples](./examples) folder.
 | Name                                                                     | Version |
 | ------------------------------------------------------------------------ | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement_terraform) | >= 0.13 |
+| <a name="requirement_gitlab"></a> [gitlab](#requirement_gitlab)          | >=3.5.0 |
+| <a name="requirement_local"></a> [local](#requirement_local)             | >=1.3.0 |
 
 ## Providers
 
-No providers.
+| Name                                                      | Version |
+| --------------------------------------------------------- | ------- |
+| <a name="provider_gitlab"></a> [gitlab](#provider_gitlab) | >=3.5.0 |
 
 ## Modules
 
@@ -79,15 +76,22 @@ No modules.
 
 ## Resources
 
-No resources.
+| Name                                                                                                     | Type     |
+| -------------------------------------------------------------------------------------------------------- | -------- |
+| [gitlab_group.this](https://registry.terraform.io/providers/gitlabhq/gitlab/latest/docs/resources/group) | resource |
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+| --- | --- | --- | --- | :-: |
+| <a name="input_description"></a> [description](#input_description) | description of group. | `string` | `""` | no |
+| <a name="input_name"></a> [name](#input_name) | The name of the group. | `string` | n/a | yes |
 
 ## Outputs
 
-No outputs.
+| Name                                                        | Description           |
+| ----------------------------------------------------------- | --------------------- |
+| <a name="output_instance"></a> [instance](#output_instance) | output instance group |
 
 <!-- END_TF_DOCS -->
 
