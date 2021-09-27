@@ -3,7 +3,7 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=0.14 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=0.13 |
 | <a name="requirement_gitlab"></a> [gitlab](#requirement\_gitlab) | >=3.5.0 |
 
 ## Providers
@@ -24,9 +24,8 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_description"></a> [description](#input\_description) | description of group. | `string` | `""` | no |
 | <a name="input_gitlab_token"></a> [gitlab\_token](#input\_gitlab\_token) | token gitlab | `string` | n/a | yes |
-| <a name="input_name"></a> [name](#input\_name) | The name of the group. | `string` | n/a | yes |
+| <a name="input_path"></a> [path](#input\_path) | The full path of the group. | `string` | n/a | yes |
 
 ## Outputs
 
