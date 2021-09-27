@@ -9,11 +9,12 @@ name: terraform-gitlab-group
 
 # Tags of this project
 tags:
-  - template
+  - gitlab
+  - group
 
 # Categories of this project
 categories:
-  - terraform-modules
+  - terraform-modules/gitlab
 
 email:
   support: support@hadenlabs.com
@@ -77,6 +78,7 @@ usage: |-
       source  = "hadenlabs/group/gitlab"
       version = "0.0.0"
     }
+
   ```
 
   Full working examples can be found in [examples](./examples) folder.
