@@ -8,16 +8,26 @@ import (
 	"github.com/gruntwork-io/terratest/modules/terraform"
 )
 
-func TestGroupBasic(t *testing.T) {
+func TestSecretWithVisibilityAll(t *testing.T) {
 	t.Parallel()
+
+	// Set config settings for the secret this test should create
 	gitlabAccessToken := os.Getenv("GITLAB_ACCESS_TOKEN")
+
+	// Set config settings for the secret this test should create
+	variables := map[string]interface{}{
+		"MYVARIABLE": "42",
+	}
+
+	group_path := "hadenlabs-test"
 
 	terraformOptions := &terraform.Options{
 		// The path to where your Terraform code is located
-		TerraformDir: "group-basic",
+		TerraformDir: "group-variables-basic",
 		Upgrade:      true,
 		Vars: map[string]interface{}{
-			"path":         "hadenlabs-test",
+			"path":         group_path,
+			"variables":    variables,
 			"gitlab_token": gitlabAccessToken,
 		},
 	}
