@@ -1,6 +1,6 @@
-variable "group_name" {
+variable "group_path" {
   type        = string
-  description = "The name of the group."
+  description = "The path full of the group."
 }
 
 variable "gitlab" {

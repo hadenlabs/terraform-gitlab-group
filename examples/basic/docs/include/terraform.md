@@ -25,7 +25,7 @@ No resources.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_gitlab"></a> [gitlab](#input\_gitlab) | vars for gitlab | <pre>object({<br>    token = string<br>  })</pre> | n/a | yes |
-| <a name="input_group_name"></a> [group\_name](#input\_group\_name) | The name of the group. | `string` | n/a | yes |
+| <a name="input_group_path"></a> [group\_path](#input\_group\_path) | The path full of the group. | `string` | n/a | yes |
 
 ## Outputs
 
