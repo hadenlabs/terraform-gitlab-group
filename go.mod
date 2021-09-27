@@ -1,3 +1,3 @@
-module github.com/hadenlabs/terraform-module-template
+module github.com/hadenlabs/terraform-gitlab-group
 
 go 1.16

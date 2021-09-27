@@ -5,7 +5,7 @@
 #
 
 # Name of this project
-name: terraform-module-template
+name: terraform-gitlab-group
 
 # Tags of this project
 tags:
@@ -19,7 +19,7 @@ email:
   support: support@hadenlabs.com
 
 confluence:
-  space: TerraformModuleTemplate
+  space: TerraformGitlabGroup
   title: Project
 
 # Logo for this project
@@ -29,22 +29,22 @@ confluence:
 license: 'LGPL-3.0'
 
 # Canonical GitHub repo
-github_repo: hadenlabs/terraform-module-template
+github_repo: hadenlabs/terraform-gitlab-group
 
 # Badges to display
 badges:
   - name: Latest Release
-    image: https://img.shields.io/github/release/hadenlabs/terraform-module-template
-    url: https://github.com/hadenlabs/terraform-module-template/releases
+    image: https://img.shields.io/github/release/hadenlabs/terraform-gitlab-group
+    url: https://github.com/hadenlabs/terraform-gitlab-group/releases
   - name: Lint
-    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/lint-code
-    url: https://github.com/hadenlabs/terraform-module-template/actions?workflow=lint-code
+    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-gitlab-group/lint-code
+    url: https://github.com/hadenlabs/terraform-gitlab-group/actions?workflow=lint-code
   - name: CI
-    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/ci
-    url: https://github.com/hadenlabs/terraform-module-template/actions?workflow=ci
+    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-gitlab-group/ci
+    url: https://github.com/hadenlabs/terraform-gitlab-group/actions?workflow=ci
   - name: Test
-    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-module-template/test
-    url: https://github.com/hadenlabs/terraform-module-template/actions?workflow=test
+    image: https://img.shields.io/github/workflow/status/hadenlabs/terraform-gitlab-group/test
+    url: https://github.com/hadenlabs/terraform-gitlab-group/actions?workflow=test
   - name: pre-commit
     image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     url: https://github.com/pre-commit/pre-commit
@@ -67,31 +67,15 @@ requirements: |-
 # Short description of this project
 description: |-
 
-  terraform-module-template for project
-
-  ### Replace name project to New Project
-
-  ```bash
-    agr 'terraform-module-template' 'new-project'
-  ```
+  terraform-gitlab-group for project
 
 # How to use this project
 usage: |-
 
   ```hcl
     module "main" {
-      source  = "app.terraform.io/hadenlabs/terraform-module-template/aws"
-      version = "0.1.1"
-
-      providers = {
-        aws = aws
-        template = template
-        local = local
-      }
-      name        = var.name
-      public_key  = var.public_key
-      private_key = var.public_key
-
+      source  = "hadenlabs/group/gitlab"
+      version = "0.0.0"
     }
   ```
 
