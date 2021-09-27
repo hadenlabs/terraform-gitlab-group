@@ -20,18 +20,18 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [gitlab_group.this](https://registry.terraform.io/providers/gitlabhq/gitlab/latest/docs/resources/group) | resource |
+| [gitlab_group.this](https://registry.terraform.io/providers/gitlabhq/gitlab/latest/docs/data-sources/group) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_description"></a> [description](#input\_description) | description of group. | `string` | `""` | no |
-| <a name="input_name"></a> [name](#input\_name) | The name of the group. | `string` | n/a | yes |
+| <a name="input_path"></a> [path](#input\_path) | The full path of the group. | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
 | <a name="output_instance"></a> [instance](#output\_instance) | output instance group |
+| <a name="output_path"></a> [path](#output\_path) | output path group |
 <!-- END_TF_DOCS -->

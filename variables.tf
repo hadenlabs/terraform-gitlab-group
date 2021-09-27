@@ -1,10 +1,4 @@
-variable "name" {
+variable "path" {
   type        = string
-  description = "The name of the group."
-}
-
-variable "description" {
-  type        = string
-  description = "description of group."
-  default     = ""
+  description = "The full path of the group."
 }
