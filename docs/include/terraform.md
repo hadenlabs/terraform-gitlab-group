@@ -20,6 +20,7 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [gitlab_group_variable.this](https://registry.terraform.io/providers/gitlabhq/gitlab/latest/docs/resources/group_variable) | resource |
 | [gitlab_group.this](https://registry.terraform.io/providers/gitlabhq/gitlab/latest/docs/data-sources/group) | data source |
 
 ## Inputs
@@ -27,6 +28,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_path"></a> [path](#input\_path) | The full path of the group. | `string` | n/a | yes |
+| <a name="input_variables"></a> [variables](#input\_variables) | Variables for group. | `map(any)` | `{}` | no |
 
 ## Outputs
 
@@ -34,4 +36,6 @@ No modules.
 |------|-------------|
 | <a name="output_instance"></a> [instance](#output\_instance) | output instance group |
 | <a name="output_path"></a> [path](#output\_path) | output path group |
+| <a name="output_variable"></a> [variable](#output\_variable) | output instance gitlab variables group |
+| <a name="output_variables"></a> [variables](#output\_variables) | List of variables available. |
 <!-- END_TF_DOCS -->
