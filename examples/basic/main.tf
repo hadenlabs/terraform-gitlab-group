@@ -3,5 +3,5 @@ module "main" {
     gitlab = gitlab
   }
   source = "../.."
-  name   = var.group_name
+  path   = group_path
 }
