@@ -4,6 +4,5 @@ module "main" {
     gitlab = gitlab
   }
 
-  name        = var.name
-  description = var.description
+  path = var.path
 }

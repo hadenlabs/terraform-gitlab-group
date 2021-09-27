@@ -17,8 +17,7 @@ func TestProjectWithBasic(t *testing.T) {
 		TerraformDir: "group-basic",
 		Upgrade:      true,
 		Vars: map[string]interface{}{
-			"name":         "hadenlabs-test-group",
-			"description":  "test description",
+			"path":         "hadenlabs-test",
 			"gitlab_token": gitlabAccessToken,
 		},
 	}
