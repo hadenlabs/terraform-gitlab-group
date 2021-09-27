@@ -2,7 +2,7 @@
 
 ```hcl
   module "main" {
-    source  = "app.terraform.io/hadenlabs/terraform-module-template/aws"
+    source  = "app.terraform.io/hadenlabs/terraform-gitlab-group/aws"
     version = "0.1.1"
 
     providers = {
