@@ -168,3 +168,6 @@ The code and styles are licensed under the LGPL-3.0 license [See project license
 ## Don't forget to 🌟 Star 🌟 the repo if you like terraform-gitlab-group
 
 [Your feedback is appreciated](https://github.com/hadenlabs/terraform-gitlab-group/issues)
+
+
+<!-- Security scan triggered at 2025-09-02 01:35:46 -->
